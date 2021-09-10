@@ -1,0 +1,36 @@
+.slider {
+	position: relative;
+	margin-left: 140px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	h5 {
+		color: white;
+		font-weight: 700;
+		line-height: 20px;
+		padding-left: 25px;
+		letter-spacing: 5px;
+		margin-bottom: 10px;
+	}
+}
+.image {
+	width: 300px;
+	height: 450px;
+	border-radius: 20px;
+}
+.right__arrow {
+	position: absolute;
+	top: 175px;
+	left: 310px;
+	cursor: pointer;
+	z-index: 10;
+	user-select: none;
+	transform: rotate(180deg);
+}
+.left__arrow {
+	position: absolute;
+	top: 175px;
+	left: -40px;
+	cursor: pointer;
+	z-index: 10;
+	user-select: none;
+}

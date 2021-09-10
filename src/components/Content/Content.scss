@@ -1,0 +1,105 @@
+.content {
+	width: 1200px;
+	height: 100vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-column-gap: 225px;
+	grid-row-gap: 20px;
+	margin-top: 50px;
+}
+.container {
+	position: relative;
+	.poster {
+		margin-bottom: 10px;
+		img {
+			overflow: auto;
+			border-radius: 10px;
+			opacity: 0.8;
+			transition: opacity 0.1s ease-in-out;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.name__year {
+		text-align: center;
+		margin-bottom: 10px;
+		width: 290px;
+		margin-bottom: 10px;
+		h1 {
+			font-size: 22px;
+			color: white;
+		}
+		p {
+			font-size: 14px;
+			color: white;
+		}
+		b {
+			font-size: 14px;
+			color: orange;
+		}
+		span {
+			font-size: 14px;
+			color: white;
+		}
+	}
+
+	.movie__average {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 0;
+		color: #fff;
+
+		border-radius: 50px;
+		width: 36px;
+		height: 36px;
+		background-color: #1a191f;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 2;
+		font-size: 10px;
+
+		&--green {
+			border: 1px solid green;
+		}
+		&--orange {
+			border: 1px solid orange;
+		}
+		&--red {
+			border: 1px solid red;
+		}
+	}
+}
+.header__search {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 175px;
+	margin-top: 22px;
+
+	.close__search {
+		position: absolute;
+		top: 9px;
+		right: 30px;
+	}
+	input {
+		width: 300px;
+		height: 30px;
+		outline: none;
+		opacity: 0.6;
+		border: 1px solid orange;
+		border-radius: 10px;
+		padding-left: 20px;
+		transition: 0.15s ease-in-out;
+		&:hover {
+			opacity: 0.8;
+		}
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
